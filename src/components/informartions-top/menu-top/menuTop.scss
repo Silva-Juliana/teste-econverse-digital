@@ -1,0 +1,26 @@
+.ul-menu {
+  padding: 0;
+  position: relative;
+  .li-menu {
+    display: flex;
+    
+
+  &:hover {
+    border: 4px solid #041E50;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    position: absolute;
+    
+
+  }
+    .span-menu {
+        font-family: 'Lato';
+        font-size: 10px;
+        color: #041E50;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+  }
+}

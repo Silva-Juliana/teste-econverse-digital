@@ -1,0 +1,149 @@
+.top-header {
+  background-color: #041E50;
+  padding: 6px 0px 6px 0px;
+  display: flex;
+
+  .box-top-header {
+    max-width: 1002px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  hr {
+    padding-top: 14px;
+    border-color: #c4c4c447;
+  }
+}
+
+.top-header-white {
+  padding: 17px 0px 16px 0px;
+  display: flex;
+
+  .box-header-white {
+    max-width: 1002px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 121px;
+
+    .input-search {
+      color:#041e505e;
+      font-family: 'Lato';
+      outline: 0;
+      font-size: 9px;
+      border-radius: 5px;
+      padding: 12px 150px 12px 27px;
+      border-color: #041e505e;
+      border-width: 1px;
+    }
+
+    .img-search {
+      position: absolute;
+      padding: 9px 0px 0px 245px;
+    }
+  }
+
+  .whatsapp {
+    color:#041E50;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    
+    .img-whatsapp {
+      width: 21px;
+      margin-right: 10px;
+    }
+  }
+  .visitor {
+    display: flex;
+    align-items: center;
+
+    .visitor-information {
+      color:#041E50;
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+
+      .my-account {
+        color:#041E50;
+        font-size: 7px;
+        margin-top: 2px;
+      }
+    }
+  }
+  .cart {
+    background: #041E50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 76px;
+    height: 98px;
+    margin-top: 26px;
+
+    .box-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 17px;
+    }
+
+    .span-cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 7px;
+      font-weight: bold;
+      font-family: 'Lato';
+      font-size: 8px;
+
+      .span-card2 {
+        margin-top: 5px;
+      }
+    }
+  }
+
+}
+  .line {
+    width: 100%;
+    border: 1px solid #c4c4c447;
+  }
+
+  .container-menu {
+    .box-menu{
+      max-width: 1002px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      box-sizing: border-box;
+      padding-right: 121px;
+    }
+  }
+
+  .box-products {
+    max-width: 1002px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 35px;
+  }
+
+  .box-news {
+    display: flex;
+    padding-top: 30px;
+    position: relative;
+  }

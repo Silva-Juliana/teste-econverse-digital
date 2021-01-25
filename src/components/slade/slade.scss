@@ -1,0 +1,139 @@
+.container-slade {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .box-slade {
+        width: 100%;
+        background-size: cover;
+        height: 537px;
+        background-position: center;
+        position: relative;
+
+
+        .informations-slade {
+            display: flex;
+
+            .arrow-left {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 42px;
+                width: 21px;
+                padding-left: 20px;
+            }
+
+            .arrow-right {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 42px;
+                width: 21px;
+                right: 0;
+                padding-right: 20px;
+            }
+
+            .text-slade {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                height: 242px;
+                padding-left: 132px;
+
+                .span-slade {
+                    color: white;
+                    font-size: 16px;
+                    font-family: 'Lato';
+                    margin-bottom: 15px;
+                    font-weight: 300;
+                    letter-spacing: 5px;
+                }
+
+                #strong-slade {
+                    font-size: 46px;
+                    font-family: 'Lato';
+                    color: white;
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 46px;
+                    font-family: 'Lato';
+                    font-weight: 300;
+                    margin-top: 4px;
+                    padding-right: 23px;
+                }
+
+                #box-a-check-out {
+                    border: 1px solid white;
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    cursor: pointer;
+
+                    &:hover{
+                        border: 1px solid white;
+                        border-radius: 3px;
+                    }
+                    .a-check-out {
+                        color: white;
+                        font-family: 'Lato';
+                        font-weight: 400;
+                        text-decoration: none;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        margin: 10px 5px 10px 5px;
+                        display: flex;
+                    }
+                }
+            }
+        }
+        
+        #click {
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+            height: 52px;
+            right: 0;
+            left: 0;
+
+            ul.ul_click {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+
+                .button_click {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50px;
+                    background: none;
+                    outline: 0;
+                    cursor: pointer;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: white;
+                    margin-right: 10px;
+                }
+
+                .button_click_white {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50px;
+                    background: white;
+                    outline: 0;
+                    cursor: pointer;
+                    border: solid;
+                    border-width: 1px;
+                    border-color: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

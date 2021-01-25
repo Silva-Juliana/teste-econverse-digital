@@ -1,0 +1,19 @@
+.container-product{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.4;
+
+    .background-product {
+        width: 106px;
+        height: 106px;
+    }
+
+    .span-product {
+        font-family: 'Lato';
+        font-size: 14px;
+        color:#041E50;
+        margin-top: 16px;
+        font-weight: 700;
+    }
+}

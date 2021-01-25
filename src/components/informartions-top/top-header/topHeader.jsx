@@ -22,6 +22,7 @@ import baterias from '../../../images/bateria.png'
 import News from '../../news/news'
 import dj from '../../../images/dj.png'
 import tocandoGuitarra from '../../../images/tocandoGuitarra.png'
+import Store from '../../store/store'
 
 function TopHeader(){
   return (<>
@@ -95,6 +96,7 @@ function TopHeader(){
       <News imgNews={dj} spanNews="NOVIDADES" strongNews="ÁUDIO" h2News="PROFISSIONAL" aNews="CONFIRA"/>
       <News imgNews={tocandoGuitarra} spanNews="NOVIDADES" strongNews="iNSTRUMENTOS" h2News="MUSICAIS" aNews="CONFIRA"/>
     </section>
+    <Store/>
   </>
   )
 }

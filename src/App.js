@@ -1,11 +1,11 @@
-import TopHeader from './components/informartions-top/top-header/topHeader'
+import Home from './components/informartions-top/top-header/home'
 
 
 
 function App() {
   return (
     <>
-     <TopHeader/>
+     <Home/>
     </>
   );
 }

@@ -4,7 +4,7 @@ import lock from '../../../images/lock-1.png'
 import arrow from '../../../images/arrow.png'
 import percentage from '../../../images/001-percentage.png'
 import truck from '../../../images/002-delivery-truck.png'
-import '../top-header/topHeader.scss'
+import '../top-header/home.scss'
 import logo from '../../../images/logo.png'
 import lupa from '../../../images/lupa.png'
 import bag from '../../../images/bag.png'
@@ -25,7 +25,7 @@ import tocandoGuitarra from '../../../images/tocandoGuitarra.png'
 import Store from '../../store/store'
 import Brands from '../../brands/brands'
 
-function TopHeader(){
+function Home(){
   return (<>
     <div className="top-header">
       <div className="box-top-header">
@@ -102,4 +102,4 @@ function TopHeader(){
   </>
   )
 }
-export default TopHeader;
+export default Home;

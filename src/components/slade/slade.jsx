@@ -1,8 +1,8 @@
 import React from 'react'
 import background from '../../images/banner.png'
 import '../slade/slade.scss'
-import arrowLeft from '../../images/arrow_left-icon.png'
-import arrowRight from '../../images/arrow_right-icon.png'
+import arrowLeft from '../../images/left.png'
+import arrowRight from '../../images/right.png'
 
 function Slade() {
 	return(

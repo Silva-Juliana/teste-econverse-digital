@@ -1,4 +1,3 @@
-import './App.css';
 import TopHeader from './components/informartions-top/top-header/topHeader'
 
 

@@ -1,0 +1,25 @@
+.container-about {
+    margin-top: 56px;
+    .box-about {
+        max-width: 1002px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+
+        .h5-about{
+            color:#041E50;
+            font-family: 'Lato';
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .p-about {
+            color:#041E50;
+            font-family: 'Lato';
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

@@ -24,6 +24,7 @@ import dj from '../../../images/dj.png'
 import tocandoGuitarra from '../../../images/tocandoGuitarra.png'
 import Store from '../../store/store'
 import Brands from '../../brands/brands'
+import AboutUs from '../../aboutUs/aboutUs'
 
 function Home(){
   return (<>
@@ -99,6 +100,7 @@ function Home(){
     </section>
     <Store/>
     <Brands/>
+    <AboutUs/>
   </>
   )
 }

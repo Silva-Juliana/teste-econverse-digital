@@ -1,5 +1,8 @@
 import React from 'react'
 import '../aboutUs/aboutUs.scss'
+import arrowLeft from '../../images/caminho1570.png'
+import arrowRight from '../../images/arrowBlue.png'
+import imageFelipe from '../../images/felipe.png'
 
 function AboutUs() {
     return (
@@ -15,8 +18,33 @@ function AboutUs() {
                     remaining essentially unchanged. It was popularised in the 1960s with 
                     the release of Letraset sheets containing Lorem
                 </p>
+                <div className="box-grey">
+                    <div className="container-resume-about">
+                        <div>
+                            <img className="arrow_left" src={arrowLeft}/>
+                        </div>
+                        <div className="box-resume-about">
+                            <img src={imageFelipe}/>
+                            <div className="descripition-felipe">
+                                <span className="span-about">Felipe Salmin</span>
+                                <p className="text-about">Designer</p>
+                            </div>
+                            <div>
+                                <div className="box-white">
+                                    <p className="p-text-about">
+                                        It is a long established fact that a reader will be distracted 
+                                        by the readable content of a page when looking at its layout
+                                        by the readable content of a page when looking at its layout
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src={arrowRight}/>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
         </>
     )

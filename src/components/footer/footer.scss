@@ -1,5 +1,8 @@
 .container-footer {
     background-color: #041E50;
+    height: 353px;
+    align-items: center;
+    display: flex;
 
     .box-footer {
         max-width: 1002px;
@@ -20,6 +23,32 @@
             .icon {
                 margin-right: 17px;
             }
+        }
+    }
+
+    .informations-footer-newsletter {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+
+
+        .newsletter {
+            font-family: 'Lato';
+            font-weight: 300;
+            color: #041E50;
+            margin-bottom: 8px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .span-footer {
+            font-family: 'Lato';
+            font-size: 13px;
+            color:#041E50 ;
+            font-weight: 300;
         }
     }
 

@@ -46,12 +46,12 @@ function Footer(){
                         <img className="form-of-payment"  src={boleto}/>
 
                         <h6>SEGURANÇA</h6>
-                        <img src={secured}/>
+                        <img className="form-of-payment" src={secured}/>
                         <img src={vtex}/>
                     </div>
-                    <div className="informations-footer">
-                        <h6>ASSINE NOSSO NEWSLETTER</h6>
-                        <span>E RECEBA NOVIDADES E PROMOÇÕES</span>
+                    <div className="informations-footer-newsletter">
+                        <span className="newsletter">ASSINE NOSSO <strong>NEWSLETTER</strong></span>
+                        <span className="span-footer">E RECEBA NOVIDADES E PROMOÇÕES</span>
                         <input placeholder="SEU NOME"/>
                         <input placeholder="SEU E-MAIL"/>
                         <button>ENVIAR</button>

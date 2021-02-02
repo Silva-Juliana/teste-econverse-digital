@@ -1,0 +1,45 @@
+.container-footer {
+    background-color: #041E50;
+
+    .box-footer {
+        max-width: 1002px;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between
+        
+    }
+
+    .informations-footer {
+        display: flex;
+        flex-direction: column;
+
+        .icons-redes {
+            margin-top: 25px;
+
+            .icon {
+                margin-right: 17px;
+            }
+        }
+    }
+
+    h6 {
+        font-family: 'Lato';
+        font-size: 13px;
+        color: white;
+        font-weight: 900;
+    }
+
+    .text-footer {
+        font-family: 'Lato';
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .form-of-payment {
+        margin-right: 6px;
+    }    
+}

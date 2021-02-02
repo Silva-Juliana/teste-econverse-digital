@@ -9,46 +9,47 @@ import boleto from '../../images/boleto.png'
 import vtex from '../../images/vtex.png'
 import american from '../../images/american.png'
 import secured from '../../images/secured.png'
+import '../footer/footer.scss'
 
 function Footer(){
     return (
         <>
             <section className="container-footer">
                 <div className="box-footer">
-                    <div>
+                    <div className="informations-footer">
                         <h6>INSTITUCIONAL</h6>
-                        <a href="">QUEM SOMOS</a>
-                        <a href="">NOSSAS LOJAS</a>
+                        <a className="text-footer" href="">QUEM SOMOS</a>
+                        <a className="text-footer"  href="">NOSSAS LOJAS</a>
 
-                        <h6>INSTITUCIONAL</h6>
-                        <a href="">QUEM SOMOS</a>
-                        <a href="">NOSSAS LOJAS</a>
+                        <h6>ATENDIMENTO</h6>
+                        <a className="text-footer"  href="">FALE CONOSCO</a>
+                        <a className="text-footer"  href="">VENDA@SNINJASOM.COM.BR</a>
                     </div>
-                    <div>
+                    <div className="informations-footer">
                         <h6>AJUDA E SUPORTE</h6>
-                        <a href="">POLÍTICA DE PRIVACIDADE</a>
-                        <a href="">POLÍTICA DE TROCA</a>
-                        <a href="">PRAZOS DE ENTREGA</a>
-                        <a href="">TERMOS DE USO</a>
+                        <a className="text-footer"  href="">POLÍTICA DE PRIVACIDADE</a>
+                        <a className="text-footer"  href="">POLÍTICA DE TROCA</a>
+                        <a className="text-footer"  href="">PRAZOS DE ENTREGA</a>
+                        <a className="text-footer"  href="">TERMOS DE USO</a>
                         <div className="icons-redes">
-                            <img src={iconInstagram}/>
-                            <img src={iconTwitter}/>
+                            <img className="icon" src={iconInstagram}/>
+                            <img className="icon" src={iconTwitter}/>
                             <img src={iconFacebook}/>
                         </div>
                     </div>
                     <div>
                         <h6>FORMAS DE PAGAMENTO</h6>
-                        <img src={visa}/>
-                        <img src={master}/>
-                        <img src={american}/>
-                        <img src={bandeira}/>
-                        <img src={boleto}/>
+                        <img className="form-of-payment" src={visa}/>
+                        <img className="form-of-payment"  src={master}/>
+                        <img className="form-of-payment"  src={american}/>
+                        <img className="form-of-payment"  src={bandeira}/>
+                        <img className="form-of-payment"  src={boleto}/>
 
                         <h6>SEGURANÇA</h6>
                         <img src={secured}/>
                         <img src={vtex}/>
                     </div>
-                    <div>
+                    <div className="informations-footer">
                         <h6>ASSINE NOSSO NEWSLETTER</h6>
                         <span>E RECEBA NOVIDADES E PROMOÇÕES</span>
                         <input placeholder="SEU NOME"/>

@@ -10,6 +10,7 @@ import vtex from '../../images/vtex.png'
 import american from '../../images/american.png'
 import secured from '../../images/secured.png'
 import '../footer/footer.scss'
+import econverse from '../../images/econverse.png'
 
 function Footer(){
     return (
@@ -39,25 +40,49 @@ function Footer(){
                     </div>
                     <div>
                         <h6>FORMAS DE PAGAMENTO</h6>
-                        <img className="form-of-payment" src={visa}/>
-                        <img className="form-of-payment"  src={master}/>
-                        <img className="form-of-payment"  src={american}/>
-                        <img className="form-of-payment"  src={bandeira}/>
-                        <img className="form-of-payment"  src={boleto}/>
+                        <div className="box-form-of-payment">
+                            <img className="form-of-payment" src={visa}/>
+                            <img className="form-of-payment"  src={master}/>
+                            <img className="form-of-payment"  src={american}/>
+                            <img className="form-of-payment"  src={bandeira}/>
+                            <img className="form-of-payment"  src={boleto}/>
+                        </div>
 
                         <h6>SEGURANÇA</h6>
                         <img className="form-of-payment" src={secured}/>
                         <img src={vtex}/>
                     </div>
                     <div className="informations-footer-newsletter">
-                        <span className="newsletter">ASSINE NOSSO <strong>NEWSLETTER</strong></span>
-                        <span className="span-footer">E RECEBA NOVIDADES E PROMOÇÕES</span>
-                        <input placeholder="SEU NOME"/>
-                        <input placeholder="SEU E-MAIL"/>
-                        <button>ENVIAR</button>
+                        <div className="box-newsletter">
+                            <span className="newsletter">ASSINE NOSSO <strong>NEWSLETTER</strong></span>
+                            <span className="span-footer">E RECEBA NOVIDADES E PROMOÇÕES</span>
+                            <div className="box-input">
+                                <input className="input-name" placeholder="SEU NOME"/>
+                                <hr/>
+                            </div>
+                            <div className="box-input">
+                                <input className="input-email" placeholder="SEU E-MAIL"/>
+                                <hr/>
+                            </div>
+                            <div className="box-button">
+                                <button className="button-submit">ENVIAR</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+            <div className="footer-with">
+                <div className="box-with">
+                    <p className="p-box-with">
+                        NINJA SOM COMÉRCIO DE ELETRÔNICOS LTDA-2012-2019. Todos os direitos reservados Rua Santa
+                        Ifigenia.556 560/562/564 - Santa Efigenia - CEP 01.207-000 São Paulo / SP - CNPJ 07.282.516/0001-15
+                    </p>
+                    <div className="img-box-with">
+                        <img className="img-econverse" src={econverse}/>
+                        <img src={vtex}/>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

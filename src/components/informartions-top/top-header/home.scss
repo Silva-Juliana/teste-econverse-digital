@@ -32,20 +32,28 @@
     box-sizing: border-box;
     padding-right: 121px;
 
+    .magnifier {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
     .input-search {
       color:#041e505e;
       font-family: 'Lato';
       outline: 0;
       font-size: 9px;
       border-radius: 5px;
-      padding: 12px 150px 12px 27px;
-      border-color: #041e505e;
+      border-color: #0f10115e;
       border-width: 1px;
+      width: 303px;
+      height: 34px;
+      padding-left: 25px;
     }
 
     .img-search {
       position: absolute;
-      padding: 9px 0px 0px 245px;
+      margin-right: 17px;
     }
   }
 

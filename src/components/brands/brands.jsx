@@ -21,22 +21,22 @@ function Brands(){
             </div>
             <div className="box-brands">
                 <div className="arrow-left">
-                    <img src={arrowLeft}/>
+                    <img className="img-brands" src={arrowLeft}/>
                 </div>
                 <div>
-                    <img src={imgAKG}/>
+                    <img className="img-brands" src={imgAKG}/>
                 </div>
                 <div>
-                    <img src={imgRoland}/>
+                    <img className="img-brands" src={imgRoland}/>
                 </div>
                 <div>
-                    <img src={imgBoss}/>
+                    <img className="img-brands" src={imgBoss}/>
                 </div>
                 <div>
-                    <img src={imgShure}/>
+                    <img className="img-brands" src={imgShure}/>
                 </div>
                 <div className="arrow-right">
-                    <img src={arrowRight}/>
+                    <img className="img-brands" src={arrowRight}/>
                 </div>
             </div>
         </div>

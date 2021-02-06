@@ -1,6 +1,6 @@
 .container-footer {
     background-color: #041E50;
-    height: 353px;
+    height: 390px;
     align-items: center;
     display: flex;
 
@@ -33,22 +33,66 @@
         border-radius: 5px;
         align-items: center;
         justify-content: center;
+        width: 300px;
 
+        .box-newsletter {
+            display: flex;
+            flex-direction: column;
 
-        .newsletter {
-            font-family: 'Lato';
-            font-weight: 300;
-            color: #041E50;
-            margin-bottom: 8px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
+            .newsletter {
+                font-family: 'Lato';
+                font-weight: 300;
+                color: #041E50;
+                margin-bottom: 8px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
 
-        .span-footer {
-            font-family: 'Lato';
-            font-size: 13px;
-            color:#041E50 ;
-            font-weight: 300;
+            .span-footer {
+                font-family: 'Lato';
+                font-size: 13px;
+                color:#041E50;
+                font-weight: 300;
+                margin-bottom: 15px;
+            }
+
+            .box-input {
+                width: 247px;
+
+                .input-name {
+                    border: none;
+                    outline: 0;
+                    font-family: 'Lato';
+                    font-weight: 300;
+                    padding-left: 22px;
+                }
+
+                .input-email {
+                    border: none;
+                    outline: 0;
+                    font-family: 'Lato';
+                    font-weight: 300;
+                    padding-left: 22px;
+                }
+
+                input::placeholder {
+                    color: #041E50;
+                }
+            }
+            .box-button {
+                margin-top: 13px;
+
+                .button-submit {
+                    background: white;
+                    outline: 0;
+                    font-size: 15px;
+                    color: #041E50;
+                    border-radius: 5px;
+                    padding: 9px 30px 9px 30px;
+                    border: 1px solid #041e506e;
+                }   
+            }
+            
         }
     }
 
@@ -67,8 +111,37 @@
         margin-bottom: 10px;
         font-weight: 700;
     }
+    .box-form-of-payment {
+        width: 60%;
 
-    .form-of-payment {
-        margin-right: 6px;
-    }    
+        .form-of-payment {
+            margin: 0px 6px 6px 0px;
+        }
+    }
 }
+
+    .footer-with {
+
+        .box-with {
+            max-width: 1002px;
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            font-family: 'Lato';
+            font-size: 12px;
+            align-items: center;
+
+            .p-box-with {
+                width: 60%;
+            }
+
+            .img-box-with {
+                margin-right: 74px;
+
+                .img-econverse {
+                    margin: 5px 36px 0px 0px;
+                }
+            }
+        }
+    }

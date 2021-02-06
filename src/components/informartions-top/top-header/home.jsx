@@ -47,7 +47,7 @@ function Home(){
           </div>
           <div className="magnifier">
             <img className="img-search" src={lupa}/>
-            <input type='text' className="input-search" placeholder="BUSQUE AQUI"></input>
+            <input type='text' className="input-search" placeholder="BUSQUE AQUI..."></input>
           </div>
           <div className="whatsapp">
             <img className="img-whatsapp" src={whatsapp}/>

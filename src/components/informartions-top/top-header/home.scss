@@ -79,6 +79,15 @@
       flex-direction: column;
       margin-left: 10px;
 
+      .hello-visitor {
+        display: flex;
+        align-items: center;
+      }
+
+      .img-poligono {
+        margin-left: 5px;
+      }
+
       .my-account {
         color:#041E50;
         font-size: 7px;
@@ -121,11 +130,16 @@
 
 }
   .line {
-    width: 100%;
-    border: 1px solid #c4c4c447;
+    margin: 0;
+    height: 1px;
+    background-color: #c4c4c466;
+    border: 0;
   }
 
   .container-menu {
+    height: 40px;
+    display: flex;
+
     .box-menu{
       max-width: 1002px;
       display: flex;

@@ -4,31 +4,104 @@
     align-items: center;
     margin: 30px 30px 30px 0px;
     width: 22%;
+    justify-content: center;
+    transition: .34s all ease;
+    
+    &:hover {
+        box-shadow: 0px 2px 7px 0px #b8afb8;
+        border-radius: 5px;
 
-    .img-itemStore {
-        width: 100%;
+        .container-itemStore {
+            .view {
+                .img-itemStore {
+                    transform: translateY(-30px);
+                    transition: .34s all ease;
+                }
+            }
+        }
+
+        .container-itemStore {
+            .view {
+                .box-lupa {
+                    display: flex;
+                }
+            }
+        }
     }
 
-    .h4-itemStore {
-        font-weight: 700;
-        font-family: 'Lato';
-        font-size: 15px;
-        color:#041E50;
-        margin-bottom: 2px;
-    }
+    .container-itemStore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 20px;
 
-    .p-itemStore {
-        font-family: 'Lato';
-        font-size: 10px;
-        color:#041E50;
-        text-align: center;
-        margin-bottom: 12px;
-    }
 
-    .span-itemStore {
-        font-weight: bold;
-        font-family: 'Lato';
-        font-size: 18px;
-        color:#041E50;
+        .h4-itemStore {
+            font-weight: 700;
+            font-family: 'Lato';
+            font-size: 15px;
+            color:#041E50;
+            margin-bottom: 2px;
+        }
+
+        .p-itemStore {
+            font-family: 'Lato';
+            font-size: 10px;
+            color:#041E50;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .span-itemStore {
+            font-weight: bold;
+            font-family: 'Lato';
+            font-size: 18px;
+            color:#041E50;
+        }
+    
+        .view {
+            position: relative;
+
+            .img-itemStore {
+                width: 100%;
+            }
+        
+            .box-lupa {
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Lato';
+                font-size: 11px;
+                color: #041E50;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, -0.428134) 100%);
+                padding-top: 73px;
+                display: none;
+            
+
+            .button-lupa {
+                background-color: #041E50;
+                border: none;
+                border-radius: 50px;
+                padding: 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                margin-bottom: 4px;
+                outline: 0;
+                cursor: pointer;
+            }
+                .lupa {
+                    width: 13px;
+                }
+        
+            }
+        } 
+
     }
 }

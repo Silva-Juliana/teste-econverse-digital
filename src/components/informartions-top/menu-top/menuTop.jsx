@@ -6,7 +6,8 @@ function MenuTop(props){
     <ul className="ul-menu">
         <li className="li-menu">
             <span className="span-menu">{props.menu}</span>
-            <img src="">{props.imgMenu}</img>
+            <img className="imgMenu" src={props.imgMenu}/>
+            <hr id="line-menu"/>
         </li>
     </ul>
     </>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import InformationsTop from '../informationsTop'
 import lock from '../../../images/lock-1.png'
 import arrow from '../../../images/arrow.png'
@@ -26,8 +26,15 @@ import Store from '../../store/store'
 import Brands from '../../brands/brands'
 import AboutUs from '../../aboutUs/aboutUs'
 import Footer from '../../footer/footer'
+import poligono from '../../../images/poligono.png'
+import Modal from '../../store/modal/modal'
 
 function Home(){
+  const [isModalVisible, setIsModalVisible] = useState(true)
+  // const [isModalVisible, setIsModalVisible] = useState({
+
+  // })
+
   return (<>
     <div className="top-header">
       <div className="box-top-header">
@@ -58,8 +65,10 @@ function Home(){
               <img src={avatar}/>
             </div>
             <div className="visitor-information">
-              <span> OLÁ VISITANTE</span>
-              <img src=""/>
+              <div className="hello-visitor">
+                <span> OLÁ VISITANTE</span>
+                <img className="img-poligono" src={poligono}/>
+              </div>
               <span className="my-account">MINHA CONTA</span>
             </div>
           </div>
@@ -76,12 +85,12 @@ function Home(){
           </div>
         </div>
     </div>
-    <div className="line"></div>
+    <hr className="line"/>
     <div className="container-menu">
       <div className="box-menu">
         <MenuTop menu="TODAS AS CATEGORIAS"/>
-        <MenuTop menu="SOM PROFISSIONAL"/>
-        <MenuTop menu="INSTRUMENTOS MUSICAIS"/>
+        <MenuTop menu="SOM PROFISSIONAL" imgMenu={poligono}/>
+        <MenuTop menu="INSTRUMENTOS MUSICAIS" imgMenu={poligono}/>
         <MenuTop menu="PROMOÇÕES"/>
         <MenuTop menu="CONTATO"/>
       </div>
@@ -99,10 +108,15 @@ function Home(){
       <News imgNews={dj} spanNews="NOVIDADES" strongNews="ÁUDIO" h2News="PROFISSIONAL" aNews="CONFIRA"/>
       <News imgNews={tocandoGuitarra} spanNews="NOVIDADES" strongNews="iNSTRUMENTOS" h2News="MUSICAIS" aNews="CONFIRA"/>
     </section>
-    <Store/>
+    <Store detail={setIsModalVisible}/>
     <Brands/>
     <AboutUs/>
     <Footer/>
+    {isModalVisible ? (
+    <Modal onClose={ ()=> setIsModalVisible(false)}>
+        <h1></h1>
+    </Modal> 
+    ): null}
   </>
   )
 }

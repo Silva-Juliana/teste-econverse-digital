@@ -1,24 +1,43 @@
 .ul-menu {
   padding: 0;
   position: relative;
-  .li-menu {
-    display: flex;
-    
+  margin: 0;
 
   &:hover {
-    border: 4px solid #041E50;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    cursor: pointer;
-    
-
+    .li-menu {
+      #line-menu {
+        display: block;
+      }
+    }
   }
+
+
+  .li-menu {
+    display: block;
+    display: flex;
+    align-items: center;
+    
+    #line-menu {
+      border: 0;
+      height: 4px;
+      background-color: #041E50;
+      margin: -15px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: none;
+    }
+
     .span-menu {
         font-family: 'Lato';
         font-size: 10px;
         color: #041E50;
         font-weight: 700;
+    }
+
+    .imgMenu {
+      margin-left: 5px;
     }
   }
 }

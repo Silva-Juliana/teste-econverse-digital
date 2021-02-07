@@ -3,7 +3,7 @@ import '../store/store.scss'
 import ApiStore from './apiStore.js'
 import ItemStore from '../store/itemStore'
 
-function Store(){
+function Store(props){
 
     console.log(ApiStore())
         
@@ -29,7 +29,7 @@ function Store(){
                         {
                             items.map(item =>{
                                 return <ItemStore photo={item.photo} productName={item.productName} 
-                                descriptionShort={item.descriptionShort} price={item.price} />
+                                descriptionShort={item.descriptionShort} price={item.price} showModal={props.detail}/>
                             })
                         }
                     </div>

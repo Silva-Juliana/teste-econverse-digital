@@ -66,16 +66,24 @@
     .check-out{
         border: 1px solid white;
         border-radius: 5px;
+        width: 155px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // &:hover {
+        //     background-color: white;
+        //     color: #041E50;
+        // }
 
         .a-check-out {
-            color: white;
             font-family: 'Lato';
             font-weight: 600;
             text-decoration: none;
             font-size: 13px;
             letter-spacing: 1px;
-            margin: 12px 32px 12px 32px;
-            display: flex;
+            color: white;
         }
     }
 

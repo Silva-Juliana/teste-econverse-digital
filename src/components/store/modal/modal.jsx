@@ -10,7 +10,7 @@ function Modal({ id= 'modal' , onClose = () => {}, children}){
         <>
         <div id={id} className="modal" onClick={handleOutsideClick}>
             <div className="container-modal">
-                <button className="close" onClick={onClose}>X</button>
+                <button className="close" onClick={onClose}></button>
                 <div className="contant">{children}</div>
             </div>
         </div>

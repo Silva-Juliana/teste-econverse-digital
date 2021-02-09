@@ -52,37 +52,7 @@ function ApiStore(){
             "photo": "http://econverse.digital/teste-front-end/junior/ninja-som/fotos-produtos/foto-pedestal-para-percussao.png",
             "price": 149990
           },
-      
-          {
-            "productName": "Mixer de Video",
-            "descriptionShort": "Many desktop publishing packages and web page editors now Many",
-            "photo": "http://econverse.digital/teste-front-end/junior/ninja-som/fotos-produtos/foto-mixer-de-video.png",
-            "price": 149990
-          },
-          {
-            "productName": "Guitarra Jackson",
-            "descriptionShort": "Many desktop publishing packages and web page editors now Many",
-            "photo": "http://econverse.digital/teste-front-end/junior/ninja-som/fotos-produtos/foto-guitarra-jackson.png",
-            "price": 149990
-          },
-          {
-            "productName": "Contrabaixo Elétrico",
-            "descriptionShort": "Many desktop publishing packages and web page editors now Many",
-            "photo": "http://econverse.digital/teste-front-end/junior/ninja-som/fotos-produtos/foto-contrabaixo-eletrico.png",
-            "price": 149990
-          },
-          {
-            "productName": "Sistema de Microfone s/ Fio",
-            "descriptionShort": "Many desktop publishing packages and web page editors now Many",
-            "photo": "http://econverse.digital/teste-front-end/junior/ninja-som/fotos-produtos/foto-sistema-de-microfones-sem-fio.png",
-            "price": 149990
-          }
         ]
       }
-
-    // return fetch("http://econverse.digital/teste-front-end/junior/ninja-som/lista-produtos/produtos.json", { method: 'GET', mode: 'cors'})
-    // .then(res => {
-    //     return res.json()
-    // })
 }
 export default ApiStore;

@@ -13,6 +13,10 @@
         
     }
 
+    img.form-of-payment {
+        margin-right: 10px;
+    }
+
     .informations-footer {
         display: flex;
         flex-direction: column;
@@ -22,6 +26,7 @@
 
             .icon {
                 margin-right: 17px;
+                cursor: pointer;
             }
         }
     }
@@ -33,7 +38,8 @@
         border-radius: 5px;
         align-items: center;
         justify-content: center;
-        width: 300px;
+        width: 276px;
+        height: 249px;
 
         .box-newsletter {
             display: flex;
@@ -63,16 +69,20 @@
                     border: none;
                     outline: 0;
                     font-family: 'Lato';
-                    font-weight: 300;
+                    font-weight: 400;
                     padding-left: 22px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
                 }
 
                 .input-email {
                     border: none;
                     outline: 0;
                     font-family: 'Lato';
-                    font-weight: 300;
+                    font-weight: 400;
                     padding-left: 22px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
                 }
 
                 input::placeholder {
@@ -88,8 +98,10 @@
                     font-size: 15px;
                     color: #041E50;
                     border-radius: 5px;
-                    padding: 9px 30px 9px 30px;
-                    border: 1px solid #041e506e;
+                    width: 110px;
+                    height: 35px;
+                    border: 1px solid #041e50;
+                    cursor: pointer;
                 }   
             }
             

@@ -78,6 +78,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 10px;
+      cursor: pointer;
 
       .hello-visitor {
         display: flex;
@@ -111,6 +112,7 @@
       flex-direction: column;
       align-items: center;
       padding-top: 17px;
+      cursor: pointer;
     }
 
     .span-cart {
@@ -168,4 +170,67 @@
     display: flex;
     padding-top: 30px;
     position: relative;
+  }
+
+  .box-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .informations-modal {
+      display: flex;
+      flex-direction: column;
+      margin-left: 59px;
+      width: 50%;
+
+      .h1-modal {
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-family: 'Lato';
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+
+      .description {
+        font-family: 'Lato';
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+
+      a {
+        font-family: 'Lato';
+        font-size: 12px;
+        color: #041e50;
+        letter-spacing: 1px;
+
+        .img-detail {
+          width: 5px;
+          margin-left: 6px;
+        }
+      }
+
+      .box-subimit {
+        margin-top: 17px;
+
+        .submit {
+          background-color: rgb(4, 30, 80);
+          color: white;
+          font-family: 'Lato';
+          font-size: 10px;
+          border: none;
+          outline: 0;
+          height: 37px;
+          border-radius: 3px;
+          width: 143px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
   }

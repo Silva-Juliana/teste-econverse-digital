@@ -12,17 +12,37 @@
 
     .container-modal {
         background-color: white;
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 280px;
         color: #041E50;
+        border-radius: 5px;
 
         .close {
             background: transparent;
             border: none;
-            outline: 0;
-            width: 32px;
+            outline: none;
+            width: 36px;
             height: 32px;
+            right: calc(-100% + 36px);
+            top: 3px;
+            display: flex;
+            position: relative;
+            align-items: center;
             cursor: pointer;
+            &:before,
+            &:after {
+                content: ' ';
+                position: absolute;
+                width: 1.5px;
+                height: 21px;
+                background-color: #0000006b;;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
         }
     }
 

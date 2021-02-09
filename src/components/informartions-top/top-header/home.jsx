@@ -28,12 +28,16 @@ import AboutUs from '../../aboutUs/aboutUs'
 import Footer from '../../footer/footer'
 import poligono from '../../../images/poligono.png'
 import Modal from '../../store/modal/modal'
+import arrowBlue from '../../../images/arrowBlue.png'
 
 function Home(){
-  const [isModalVisible, setIsModalVisible] = useState(true)
-  // const [isModalVisible, setIsModalVisible] = useState({
-
-  // })
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [modalData, setModalData] = useState({
+    productName: '',
+    descriptionShort:'',
+    photo:'',
+    price:'',
+  })
 
   return (<>
     <div className="top-header">
@@ -108,13 +112,32 @@ function Home(){
       <News imgNews={dj} spanNews="NOVIDADES" strongNews="ÁUDIO" h2News="PROFISSIONAL" aNews="CONFIRA"/>
       <News imgNews={tocandoGuitarra} spanNews="NOVIDADES" strongNews="iNSTRUMENTOS" h2News="MUSICAIS" aNews="CONFIRA"/>
     </section>
-    <Store detail={setIsModalVisible}/>
+    <Store 
+      detail={setIsModalVisible}
+      data={setModalData}
+    />
     <Brands/>
     <AboutUs/>
     <Footer/>
     {isModalVisible ? (
     <Modal onClose={ ()=> setIsModalVisible(false)}>
-        <h1></h1>
+      <div className="box-modal">
+          <div>
+            <img src={modalData.photo}/>
+          </div>
+          <div className="informations-modal">
+            <h1 className="h1-modal">{modalData.productName}</h1>
+            <span className="price">{modalData.price}</span>
+            <p className="description">{modalData.descriptionShort}</p>
+            <a classname="detail" href="">
+              Veja mais detalhes do produto
+              <img className="img-detail" src={arrowBlue}/>
+            </a>
+            <div className="box-subimit">
+              <button className="submit">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
     </Modal> 
     ): null}
   </>

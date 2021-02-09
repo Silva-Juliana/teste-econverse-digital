@@ -10,7 +10,15 @@ function ItemStore(item) {
                 <div className="view">
                     <img className="img-itemStore" src={item.photo}/>
                     <div className="box-lupa">
-                        <button onClick={() => item.showModal(true) } className="button-lupa">
+                        <button onClick={() => {
+                            item.showModal(true) 
+                            item.data({
+                                photo: item.photo ,
+                                productName: item.productName,
+                                descriptionShort: item.descriptionShort,
+                                price: item.price
+                            })
+                        }} className="button-lupa">
                             <img className="lupa" src={lupa}/>
                         </button>
                         <span>Quick view</span>

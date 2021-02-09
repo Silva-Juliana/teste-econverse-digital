@@ -11,6 +11,7 @@ import american from '../../images/american.png'
 import secured from '../../images/secured.png'
 import '../footer/footer.scss'
 import econverse from '../../images/econverse.png'
+import vtex2 from '../../images/vtex2.jpeg'
 
 function Footer(){
     return (
@@ -35,7 +36,7 @@ function Footer(){
                         <div className="icons-redes">
                             <img className="icon" src={iconInstagram}/>
                             <img className="icon" src={iconTwitter}/>
-                            <img src={iconFacebook}/>
+                            <img className="icon" src src={iconFacebook}/>
                         </div>
                     </div>
                     <div>
@@ -50,7 +51,7 @@ function Footer(){
 
                         <h6>SEGURANÇA</h6>
                         <img className="form-of-payment" src={secured}/>
-                        <img src={vtex}/>
+                        <img src={vtex2}/>
                     </div>
                     <div className="informations-footer-newsletter">
                         <div className="box-newsletter">

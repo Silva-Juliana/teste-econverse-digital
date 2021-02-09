@@ -4,17 +4,16 @@
     text-align: center;
 
     .box-text {
-
         margin-bottom: 70px;
 
-        h5{
+        h5 {
             font-weight: 500;
             font-family: 'Lato';
             font-size: 25px;
             color: #041E50;
             margin: 3px;
         }
-        .text-brands{
+        .text-brands {
             color: #041e5063;
             font-size: 16px;
             font-family: 'Lato';
@@ -27,10 +26,12 @@
 
         .arrow-left {
             margin-left: 39px;
+            cursor: pointer;
         }
 
         .arrow-right {
             margin-right: 39px;
+            cursor: pointer;
         }
   
             .img-brands {

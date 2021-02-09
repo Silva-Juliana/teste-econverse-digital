@@ -28,8 +28,14 @@ function Store(props){
                     <div className="dad-items">
                         {
                             items.map(item =>{
-                                return <ItemStore photo={item.photo} productName={item.productName} 
-                                descriptionShort={item.descriptionShort} price={item.price} showModal={props.detail}/>
+                                return <ItemStore 
+                                    photo={item.photo} 
+                                    productName={item.productName} 
+                                    descriptionShort={item.descriptionShort} 
+                                    price={(item.price/100).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})} 
+                                    showModal={props.detail} 
+                                    data={props.data}
+                                />
                             })
                         }
                     </div>
